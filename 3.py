@@ -1,21 +1,18 @@
 def valid(koti):
     koti=str(koti)
     for p in koti:
-        if int(p) not in digits:
+        if int(p) not in dig:
             return False
     return True
-  
-  
-digits=[0,1,2,5,6,8,9]
-
+dig=(0,1,2,5,6,8,9)
 number = int(input())
-if number < len(digits):
-    print(digits[number])
+if number < len(dig):
+    print(dig[number])
 else:
-    count=len(digits)
-    k=digits[-1]
-    while(count<=number):
-        k+=1
-        if valid(k):
-            count+=1
-    print(k)
+    cnt=len(dig)
+    key=dig[-1]
+    while(cnt<=number):
+        key+=1
+        if valid(key):
+            cnt+=1
+    print(key)
