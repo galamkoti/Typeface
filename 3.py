@@ -10,7 +10,7 @@ digits=[0,1,2,5,6,8,9]
 
 number = int(input())
 if number < len(digits):
-    print(digits[number-1])
+    print(digits[number])
 else:
     count=len(digits)
     k=digits[-1]
