@@ -1,0 +1,4 @@
+Initially find all the “img” tags in the inspect option and iterate over them
+and extract attribute “href” from each found object.
+Then normalize URL all the URLs. Then when you have URL of image you can retrieve 
+it using standard http request and save response to the filesystem as image file.
